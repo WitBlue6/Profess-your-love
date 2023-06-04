@@ -10,6 +10,8 @@ class MainPage:
         self.left = 0
         self.right = 2  # 记录按钮左右位置
 
+
+        self.root.overrideredirect(True)
         self.show_button()
 
     def show_button(self):

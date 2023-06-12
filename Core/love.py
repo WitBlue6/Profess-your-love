@@ -5,7 +5,11 @@ class MainPage:
     def __init__(self, root: tk.Tk):
         self.root = root
         self.root.title('表白')
-        self.root.geometry('400x300')
+        width = 400
+        height = 300
+        swidth = root.winfo_screenwidth()
+        sheight = root.winfo_screenheight()
+        self.root.geometry('%dx%d+%d+%d'%(width, height, swidth/2-width/2, sheight/2-height/2))
 
         self.left = 0
         self.right = 2  # 记录按钮左右位置
